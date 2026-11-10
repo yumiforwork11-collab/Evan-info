@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evan老師的英文冒險基地</title>
+    <meta name="description" content="Evan 老師陪孩子從不敢說，到願意開口說英文。用互動、情境與遊戲，讓英文成為孩子熟悉的語言。">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+            background:
+                radial-gradient(circle at 8% 8%, #dbeafe 0, transparent 28%),
+                radial-gradient(circle at 92% 18%, #ccfbf1 0, transparent 30%),
+                #f8fafc;
+            color: #334155;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .bouncy { transition: transform .15s ease; }
+        .bouncy:active { transform: scale(.95); }
+        .soft-shadow { box-shadow: 0 15px 40px rgba(37, 99, 235, .12); }
+        @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+        .float { animation: float 3s ease-in-out infinite; }
+        @media (prefers-reduced-motion: reduce) { .float { animation: none; } }
+    </style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="sticky top-0 z-50 px-3 md:px-4 pt-3">
+    <div class="max-w-5xl mx-auto">
+        <nav class="bg-white/90 backdrop-blur-md rounded-full shadow-sm px-3 sm:px-4 py-2.5 flex items-center justify-between">
+            <a href="#top" class="flex items-center gap-1.5 font-bold text-blue-600 shrink-0">
+                <span class="text-xl sm:text-2xl">👨🏻‍🏫</span>
+                <span class="text-sm sm:text-base md:text-lg">Teacher Evan</span>
+            </a>
+            <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
+                <a href="#style" class="hidden sm:inline-block px-3 py-2 rounded-full text-sm font-bold text-slate-500 hover:text-blue-600 transition">教學特色</a>
+                <a href="#refer" class="px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold text-teal-700 bg-teal-50 hover:bg-teal-100 whitespace-nowrap transition bouncy">🤝 推薦好友</a>
+                <a href="http://app.yumi-hub.cc.cd:5050/" target="_blank" rel="noopener noreferrer"
+                   class="bg-blue-600 hover:bg-blue-700 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold shadow-md whitespace-nowrap bouncy transition">🚀 學習基地</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main id="top" class="max-w-5xl mx-auto px-4 pt-5 pb-12">
+
+    <!-- ================= HERO ================= -->
+    <section class="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-blue-600 via-blue-500 to-teal-400 text-white p-7 md:p-12 soft-shadow">
+        <div class="absolute -right-16 -top-16 w-48 h-48 rounded-full bg-white/10"></div>
+        <div class="absolute -left-10 -bottom-20 w-40 h-40 rounded-full bg-amber-300/15"></div>
+
+        <div class="relative z-10 grid md:grid-cols-[1fr_260px] items-center gap-8">
+            <div>
+                <div class="inline-flex items-center gap-2 bg-white/20 rounded-full px-4 py-2 text-xs font-bold mb-4">
+                    ✨ Children's English Learning
+                </div>
+                <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">
+                    Evan老師的<br>
+                    <span class="text-amber-200">英文冒險基地 🧭</span>
+                </h1>
+                <p class="mt-4 text-blue-50 text-sm md:text-base leading-relaxed max-w-xl">
+                    陪孩子從「不敢說」，到「願意開口說英文」。<br>
+                    用互動、情境與遊戲，讓英文慢慢變成孩子熟悉的語言。
+                </p>
+                <div class="flex flex-wrap gap-3 mt-6">
+                    <a href="#refer" class="bg-amber-300 text-slate-800 font-extrabold px-6 py-3 rounded-full shadow-lg bouncy">🤝 預約試聽</a>
+                    <a href="#style" class="bg-white/20 border border-white/40 text-white font-bold px-6 py-3 rounded-full bouncy">認識教學方式</a>
+                </div>
+            </div>
+
+            <!-- TODO: 有 Evan 老師照片時，改成 <img src="evan.jpg" class="...rounded-full object-cover"> -->
+            <div class="flex justify-center">
+                <div class="float w-40 h-40 md:w-52 md:h-52 rounded-full bg-white/20 border-4 border-white/50 flex items-center justify-center text-8xl md:text-9xl shadow-2xl">
+                    👨🏻‍🏫
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 數字亮點 ================= -->
+    <!-- TODO: 請替換成 Evan 老師的實際資料 -->
+    <section class="mt-6 grid grid-cols-3 gap-3 md:gap-4">
+        <div class="bg-white rounded-3xl p-4 md:p-6 text-center soft-shadow">
+            <div class="text-2xl md:text-4xl font-extrabold text-blue-600">1對1</div>
+            <div class="text-[11px] md:text-sm text-slate-500 mt-1">專屬互動課堂</div>
+        </div>
+        <div class="bg-white rounded-3xl p-4 md:p-6 text-center soft-shadow">
+            <div class="text-2xl md:text-4xl font-extrabold text-teal-600">遊戲化</div>
+            <div class="text-[11px] md:text-sm text-slate-500 mt-1">玩中學、學中玩</div>
+        </div>
+        <div class="bg-white rounded-3xl p-4 md:p-6 text-center soft-shadow">
+            <div class="text-2xl md:text-4xl font-extrabold text-amber-500">敢開口</div>
+            <div class="text-[11px] md:text-sm text-slate-500 mt-1">建立說英文的自信</div>
+        </div>
+    </section>
+
+    <!-- ================= 關於 Evan ================= -->
+    <section class="mt-6 bg-white rounded-[2rem] p-6 md:p-10 soft-shadow">
+        <div class="grid md:grid-cols-[200px_1fr] gap-6 md:gap-10 items-center">
+            <div class="flex justify-center">
+                <div class="w-32 h-32 md:w-44 md:h-44 rounded-[2rem] bg-gradient-to-br from-blue-100 to-teal-100 flex items-center justify-center text-7xl md:text-8xl">👨🏻‍🏫</div>
+            </div>
+            <div>
+                <span class="text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">About Evan</span>
+                <h2 class="text-2xl md:text-3xl font-extrabold text-slate-800 mt-3">嗨，我是 Evan 老師</h2>
+                <!-- TODO: 請補上 Evan 老師的真實自我介紹（經歷、背景、專長、興趣） -->
+                <p class="text-sm md:text-base text-slate-600 mt-3 leading-relaxed">
+                    我相信孩子學英文最重要的不是背多少單字，而是願意開口、敢犯錯、覺得好玩。
+                    課堂上我像是孩子的「冒險隊長」，帶著他們用英文闖關、探索，一步步累積自信。
+                </p>
+                <div class="flex flex-wrap gap-2 mt-4">
+                    <span class="text-xs font-bold bg-slate-100 text-slate-600 px-3 py-1.5 rounded-full">🎯 耐心引導</span>
+                    <span class="text-xs font-bold bg-slate-100 text-slate-600 px-3 py-1.5 rounded-full">🎮 遊戲式教學</span>
+                    <span class="text-xs font-bold bg-slate-100 text-slate-600 px-3 py-1.5 rounded-full">🗣️ 重視口說</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 教學特色 ================= -->
+    <section id="style" class="mt-10 scroll-mt-24">
+        <div class="text-center mb-6">
+            <span class="text-xs font-bold text-teal-700 bg-teal-50 px-3 py-1 rounded-full">TEACHING STYLE</span>
+            <h2 class="text-2xl md:text-3xl font-extrabold text-slate-800 mt-3">Evan 老師的課堂長這樣</h2>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="bg-white rounded-3xl p-5 border border-blue-100 soft-shadow">
+                <div class="w-12 h-12 rounded-2xl bg-blue-50 flex items-center justify-center text-2xl mb-3">🗣️</div>
+                <h3 class="font-extrabold text-slate-800">開口優先</h3>
+                <p class="text-xs text-slate-500 mt-2 leading-relaxed">先敢說、再說好。犯錯沒關係，每一句嘗試都值得被鼓勵。</p>
+            </div>
+            <div class="bg-white rounded-3xl p-5 border border-teal-100 soft-shadow">
+                <div class="w-12 h-12 rounded-2xl bg-teal-50 flex items-center justify-center text-2xl mb-3">🎲</div>
+                <h3 class="font-extrabold text-slate-800">遊戲互動</h3>
+                <p class="text-xs text-slate-500 mt-2 leading-relaxed">闖關、角色扮演、猜謎，讓孩子在笑聲中不知不覺學會英文。</p>
+            </div>
+            <div class="bg-white rounded-3xl p-5 border border-amber-100 soft-shadow">
+                <div class="w-12 h-12 rounded-2xl bg-amber-50 flex items-center justify-center text-2xl mb-3">🏙️</div>
+                <h3 class="font-extrabold text-slate-800">生活情境</h3>
+                <p class="text-xs text-slate-500 mt-2 leading-relaxed">從點餐、問路到自我介紹，把英文用在真實生活裡。</p>
+            </div>
+            <div class="bg-white rounded-3xl p-5 border border-indigo-100 soft-shadow">
+                <div class="w-12 h-12 rounded-2xl bg-indigo-50 flex items-center justify-center text-2xl mb-3">🌱</div>
+                <h3 class="font-extrabold text-slate-800">循序漸進</h3>
+                <p class="text-xs text-slate-500 mt-2 leading-relaxed">依孩子程度調整節奏，穩穩累積，不揠苗助長。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 上課流程 ================= -->
+    <section class="mt-10 bg-gradient-to-br from-slate-800 to-blue-900 text-white rounded-[2rem] p-6 md:p-10 soft-shadow">
+        <div class="text-center mb-6">
+            <h2 class="text-2xl md:text-3xl font-extrabold">一堂課怎麼進行？</h2>
+            <p class="text-sm text-blue-200 mt-2">暖身 → 學習 → 遊戲 → 回顧，節奏明確、孩子專注</p>
+        </div>
+        <ol class="grid sm:grid-cols-4 gap-4">
+            <li class="bg-white/10 rounded-2xl p-4"><div class="text-amber-300 font-extrabold text-sm">01</div><div class="font-bold mt-1">🔥 暖身開場</div><p class="text-xs text-blue-100 mt-1 leading-relaxed">輕鬆聊天，喚醒耳朵和嘴巴。</p></li>
+            <li class="bg-white/10 rounded-2xl p-4"><div class="text-amber-300 font-extrabold text-sm">02</div><div class="font-bold mt-1">📖 主題學習</div><p class="text-xs text-blue-100 mt-1 leading-relaxed">單字、句型搭配情境導入。</p></li>
+            <li class="bg-white/10 rounded-2xl p-4"><div class="text-amber-300 font-extrabold text-sm">03</div><div class="font-bold mt-1">🎮 遊戲練習</div><p class="text-xs text-blue-100 mt-1 leading-relaxed">用闖關與任務反覆應用所學。</p></li>
+            <li class="bg-white/10 rounded-2xl p-4"><div class="text-amber-300 font-extrabold text-sm">04</div><div class="font-bold mt-1">⭐ 回顧鼓勵</div><p class="text-xs text-blue-100 mt-1 leading-relaxed">肯定進步，帶著成就感下課。</p></li>
+        </ol>
+    </section>
+
+    <!-- ================= 推薦好友 ================= -->
+    <section id="refer" class="mt-10 scroll-mt-24 bg-white rounded-[2rem] border-2 border-blue-200 p-6 md:p-9 text-center soft-shadow">
+        <div class="inline-flex items-center gap-1.5 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-xs font-black px-4 py-1.5 rounded-full shadow-sm mb-3">
+            🔥 年終限定加碼
+        </div>
+        <h2 class="text-2xl md:text-3xl font-extrabold text-slate-800">推薦好友一起學・課程堂數加碼送！</h2>
+        <p class="text-sm text-slate-500 mt-2 max-w-lg mx-auto leading-relaxed">把 Evan 老師推薦給身邊的朋友，雙方都有好康。</p>
+
+        <div class="mt-6 bg-blue-50/60 border border-blue-100 rounded-2xl p-5 md:p-7 text-left max-w-2xl mx-auto">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-4 border-b border-blue-100 pb-3">
+                <span class="text-xs font-extrabold text-blue-700 bg-white px-3 py-1 rounded-full border border-blue-200">⏳ OiKID 年終限定優惠</span>
+                <span class="text-xs font-bold text-slate-500">活動期間：<strong class="text-blue-600">2026/10/01 – 2026/12/31</strong></span>
+            </div>
+            <p class="text-base md:text-lg font-extrabold text-slate-800 mb-4">
+                🎁 雙方最高共拿 <span class="bg-blue-600 text-white px-2.5 py-0.5 rounded-md">12 堂</span> 精品課程！
+            </p>
+            <div class="space-y-3 text-sm">
+                <div class="flex items-start gap-3 bg-white p-3.5 rounded-xl border border-blue-100">
+                    <span class="text-xl">🚀</span>
+                    <div><span class="font-bold text-slate-800">好友完成試聽：</span>推薦人獨享 <span class="text-blue-600 font-extrabold">贈 2 堂</span></div>
+                </div>
+                <div class="flex items-start gap-3 bg-white p-3.5 rounded-xl border border-blue-200 ring-2 ring-blue-400/20">
+                    <span class="text-xl">💥</span>
+                    <div><span class="font-bold text-slate-800">好友完成報名：</span>推薦人加碼 <span class="text-blue-600 font-extrabold">+6 堂</span>（累積最高 <span class="text-blue-600 font-extrabold">8 堂</span>）｜好友獨享 <span class="text-amber-600 font-extrabold">4 堂</span></div>
+                </div>
+            </div>
+            <p class="text-[11px] text-slate-400 mt-4 text-center md:text-right">💡 不同家庭計算為一組，推薦越多累積堂數無上限！</p>
+        </div>
+
+        <a href="https://docs.google.com/forms/d/1Q9Yh_xKcmTl0jbUSSBw7AYIPpgR0MaieCz23dSqzC7w/edit?ts=69f9c1b4"
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center justify-center gap-2 mt-6 bg-gradient-to-r from-blue-600 to-teal-500 hover:from-blue-700 hover:to-teal-600 text-white px-9 py-4 rounded-full font-extrabold text-base md:text-lg shadow-lg bouncy transition">
+            🔥 立即揪友領課 <span>➔</span>
+        </a>
+    </section>
+
+    <!-- ================= 學習資源 ================= -->
+    <section class="mt-6 bg-white/70 backdrop-blur-sm rounded-[2.5rem] p-4 md:p-6 border border-blue-100 soft-shadow">
+        <div class="rounded-[2rem] bg-gradient-to-r from-blue-700 to-teal-500 text-white p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+                <span class="text-xs font-bold bg-white/20 px-3 py-1 rounded-full">✨ 學員專屬學習資源</span>
+                <h2 class="text-2xl md:text-3xl font-extrabold mt-3">上完課，繼續玩英文 🚀</h2>
+                <p class="text-blue-100 text-sm mt-2 max-w-lg">單字、拼讀、趣味挑戰，在家也能輕鬆複習課堂內容。</p>
+            </div>
+            <a href="http://app.yumi-hub.cc.cd:5050/" target="_blank" rel="noopener noreferrer"
+               class="shrink-0 bg-white text-blue-700 px-7 py-4 rounded-2xl font-extrabold shadow-xl bouncy transition">🚀 進入學習基地 →</a>
+        </div>
+
+        <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <a href="http://app.yumi-hub.cc.cd:5050/bubble.html" class="bg-sky-50 rounded-3xl p-5 border border-sky-100 hover:shadow-md transition block">
+                <div class="text-2xl">🎨</div>
+                <h3 class="text-base font-extrabold text-slate-800 mt-2">魔法塗鴉英語樂園</h3>
+                <p class="text-xs text-slate-600 mt-2 leading-relaxed">繪畫創作結合發音互動遊戲。</p>
+                <span class="inline-block mt-3 text-blue-600 font-bold text-xs">進入 →</span>
+            </a>
+            <a href="http://app.yumi-hub.cc.cd:5050/ani.html" class="bg-sky-50 rounded-3xl p-5 border border-sky-100 hover:shadow-md transition block">
+                <div class="text-2xl">🐱</div>
+                <h3 class="text-base font-extrabold text-slate-800 mt-2">萌寵英語探索樂園</h3>
+                <p class="text-xs text-slate-600 mt-2 leading-relaxed">賺取星星，孵化可愛萌寵。</p>
+                <span class="inline-block mt-3 text-blue-600 font-bold text-xs">進入 →</span>
+            </a>
+            <a href="http://app.yumi-hub.cc.cd:5050/phonics.html" class="bg-sky-50 rounded-3xl p-5 border border-sky-100 hover:shadow-md transition block">
+                <div class="text-2xl">⚡</div>
+                <h3 class="text-base font-extrabold text-slate-800 mt-2">拼讀樂園</h3>
+                <p class="text-xs text-slate-600 mt-2 leading-relaxed">L1–L16 發音規則，含錯題特訓。</p>
+                <span class="inline-block mt-3 text-blue-600 font-bold text-xs">進入 →</span>
+            </a>
+            <a href="http://app.yumi-hub.cc.cd:5050/eng_word.html" class="bg-sky-50 rounded-3xl p-5 border border-sky-100 hover:shadow-md transition block">
+                <div class="text-2xl">🎈</div>
+                <h3 class="text-base font-extrabold text-slate-800 mt-2">單字探索英語樂園</h3>
+                <p class="text-xs text-slate-600 mt-2 leading-relaxed">3D 卡片、聽音與拼字關卡。</p>
+                <span class="inline-block mt-3 text-blue-600 font-bold text-xs">進入 →</span>
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer class="text-center pb-8 px-4">
+    <div class="text-2xl mb-2">👨🏻‍🏫 🧭 ✨</div>
+    <p class="text-xs text-slate-400">Teacher Evan's English Studio</p>
+    <p class="text-[11px] text-slate-400 mt-1">Learn • Play • Speak with Confidence</p>
+</footer>
+
+</body>
+</html>
